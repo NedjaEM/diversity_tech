@@ -160,7 +160,7 @@ d3.select("select")
       .enter()
       .append("circle")
         .attr("cx", width-margin.left +50)
-        .attr("cy", function(d,i){ return 800 + i*40}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("cy", function(d,i){ return 700 + i*40}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 14)
         .style("fill", function(d){ return colorScale_ethnicity(d)})
     
@@ -171,7 +171,7 @@ d3.select("select")
       .append("text")
         .attr("font-size","40px")
         .attr("x", width+margin.left )
-        .attr("y", function(d,i){ return 800+ i*40}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("y", function(d,i){ return 700+ i*40}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d){ return colorScale_ethnicity(d)})
         .text(function(d){ return d})
         .attr("text-anchor", "left")
