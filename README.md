@@ -1,2 +1,0 @@
-# diversity_tech
-
