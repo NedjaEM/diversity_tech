@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Diversity in Tech Companies</title>
+
+    <!-- custom font: https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <h1>Diversity in Tech</h1>
+      <h2>Diversity in Technology Companies between 2014 and 2018</h2>
+    </header>
+    
+<select class ="dropbtn" id="d3-dropdown">
+  <option value="first">2014</option>
+  <option value="second">2015</option>
+  <option value="third">2016</option>
+  <option value="forth">2018</option>
+</select>
+
+
+    <!-- all we need is an element to select -->
+    <div id="d3-container1"> </div>
+    <div id="d3-container2"> </div>
+
+    <!-- this is the line that loads in d3 -->
+    <script src="../lib/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <script src="./main.js"></script>
+  </body>
+</html>

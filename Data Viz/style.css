@@ -1,0 +1,112 @@
+body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1em 3em;
+    /* max-width: 500px; */
+    background-color:	#505050;
+  }
+
+.d3-container {
+  max-width: 100px;
+}
+
+.header {
+  color: #d3d3d3;
+  font-size: 30px;
+}
+
+  
+.text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d3d3d3;
+}
+  .label {
+    fill: white;
+    text-anchor: middle;
+  }
+
+  .axis {
+    font: 16px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke:rgb(169,169,169);
+    stroke-width: 6px;
+  }
+
+  .tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 100px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 30px sans-serif;		
+    background: rgb(182, 184, 187);	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+
+.legend{
+  font-size: 40px;
+}
+
+.dropbtn {
+  right: 100px;
+  background-color: #d3d3d3;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  width: 200px;
+  height: 100px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #d3d3d3 ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 35px;
+ width: 200px;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: 	#9370DB;
+}
