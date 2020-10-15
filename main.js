@@ -8,10 +8,9 @@ Promise.all([
 ]).then(([data_2018,data_2016,data_2015,data_2014]) => {
 
 
-  data = data_2014
-  d3.select("#selected-dropdown").text("2014");
+  data = data_2018
+  d3.select("#selected-dropdown").text("2018");
 
-  d3.select("#selected-dropdown").text("first");
 
 d3.select("select")
   .on("change",function(d){
@@ -161,7 +160,7 @@ d3.select("select")
       .enter()
       .append("circle")
         .attr("cx", width-margin.left +50)
-        .attr("cy", function(d,i){ return 900 + i*40}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("cy", function(d,i){ return 800 + i*40}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 14)
         .style("fill", function(d){ return colorScale_ethnicity(d)})
     
@@ -172,7 +171,7 @@ d3.select("select")
       .append("text")
         .attr("font-size","40px")
         .attr("x", width+margin.left )
-        .attr("y", function(d,i){ return 900 + i*40}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("y", function(d,i){ return 800+ i*40}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d){ return colorScale_ethnicity(d)})
         .text(function(d){ return d})
         .attr("text-anchor", "left")
