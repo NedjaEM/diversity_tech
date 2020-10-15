@@ -1,10 +1,10 @@
 // data load
 // reference for d3.autotype: https://github.com/d3/d3-dsv#autoType
 Promise.all([
-  d3.csv("../data/div_tech_2018_may.csv", d3.autoType),
-  d3.csv("../data/div_tech_2016_aug.csv", d3.autoType),
-  d3.csv("../data/div_tech_2015_jul.csv", d3.autoType),
-  d3.csv("../data/div_tech_2014.csv", d3.autoType)
+  d3.csv("data/div_tech_2018_may.csv", d3.autoType),
+  d3.csv("data/div_tech_2016_aug.csv", d3.autoType),
+  d3.csv("data/div_tech_2015_jul.csv", d3.autoType),
+  d3.csv("data/div_tech_2014.csv", d3.autoType)
 ]).then(([data_2018,data_2016,data_2015,data_2014]) => {
 
 
